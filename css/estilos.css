@@ -1,0 +1,14 @@
+#inicio .ui-content,
+#registro .ui-content { 
+	text-align: Center;
+}
+
+#inicio img{
+	margin-bottom: 20 px;
+}
+
+#inicio button,
+#registro button{
+	margin: 20px 0;
+}
+

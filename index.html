@@ -1,0 +1,56 @@
+<!doctype html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>App Hotel</title>
+	<Link rel="stylesheet" type="text/css" href="css/jquery.mobile-1.4.5.min.css">
+	<Link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	
+	<div id="inicio" data-role="page">
+		<div data-role="header">
+		</div>
+		
+		<div data-role="main" class="ui-content"> 
+			<img src="img/logo-hotel.png" >
+			<input type="text" name="email" id="email" >
+			<input type="password" name="password" id="password" 
+			placeholder="Contraseña">
+			<button class = "ui-btn-active">
+				Iniciar Sesión
+			</button>
+			<a href="#registro"> Aún no tienes cuenta? </a>
+		</div>
+			<div data-Role="footer" data-position="fixed">
+			</div>
+		
+	</div>
+
+	<div id="registro" data-role="page">
+		<div data-role="header">
+		</div>
+		
+		<div data-role="main" class="ui-content"> 
+			<h1> Registro </h1>
+			<input type="text" name="name" id="Nombre" placeholder="Nombre">
+			<input type="Tel" name="phone" id="Telefono" placeholder="Telefono"> 
+			<input type="text" name="email" id="email" placeholder="Correo" >
+			<input type="password" name="password" id="password" placeholder="Contraseña">
+			<input type="password" name="password" id="password2" placeholder="Confirmar contraseña">
+
+			<button class = "ui-btn-active">
+				Registrar
+			</button>
+			<a href="#inicio"> Ya tienes cuenta? </a>
+		</div>
+			<div data-Role="footer" data-position="fixed">
+			</div>
+	</div>
+
+	<script type="text/javascript" src="js/phonegap.js"></script>
+	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+</body>
+</html>
