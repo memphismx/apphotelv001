@@ -1,6 +1,7 @@
 #inicio .ui-content,
-#registro .ui-content { 
-	text-align: Center;
+#registro .ui-content,
+#main .ui-content{ 
+	text-align: center;
 }
 
 #inicio img{
@@ -12,3 +13,9 @@
 	margin: 20px 0;
 }
 
+#main img{
+	margin-top: 70px;
+}
+.menu-btn{
+	padding: 20px;
+}
