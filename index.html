@@ -15,9 +15,10 @@
 
 		<div data-role="main" class="ui-content"> 
 			<img src="img/logo-hotel.jpg" >
-			<input type="text" name="email" id="email" placeholder="email">
-			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<a href="#main" class="ui-btn ui-btn-active">Iniciar Sesión</a>
+			<input type="text" name="email" id="email-inicio" placeholder="email">
+			<input type="password" name="password-inicio" id="password" placeholder="Contraseña">
+			<a id="btn-inicio-sesion" class="ui-btn ui-btn-active">
+					Iniciar Sesión</a>
 			<a href="#registro"> Aún no tienes cuenta? </a>
 		</div>
 			<div data-Role="footer" data-position="fixed">
@@ -33,7 +34,7 @@
 			<h1> Registro </h1>
 			<input type="text" name="name" id="Nombre" placeholder="Nombre">
 			<input type="Tel" name="phone" id="Telefono" placeholder="Telefono"> 
-			<input type="text" name="email" id="email" placeholder="Correo" >
+			<input type="text" name="email" id="email-registro" placeholder="Correo" >
 			<input type="password" name="password" id="password" placeholder="Contraseña">
 			<input type="password" name="password" id="password2" placeholder="Confirmar contraseña">
 
@@ -72,7 +73,9 @@
 				<li> 
 					<a href="#galeria">Galería</a>
 				</li>
-				<li>Privacidad</li>
+				<li>
+					<a href="#privacidad">Aviso de Privacidad</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -179,23 +182,115 @@
 			</div>
 			<h1>Galeria</h1>
 		</div>
+
+		<div data-role="popup" id="1" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-1.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="2" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-2.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="3" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-3.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="4" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-4.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="5" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-5.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="6" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-6.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="7" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-7.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
+		<div data-role="popup" id="8" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-8.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+		<div data-role="popup" id="9" data-overlay-theme="b" data-theme="b" data-corners="false">
+			<a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+			<img class="popphoto" src="img/gallery-9.jpg" style="max-heigth:512px" alt="Cordoba,Veracruz"> 
+		</div>
+
 		<div data-role="main" class="ui-content">
-			<div class="ui-grid-b">
-				<div class="ui-block-a"><img src="img/gallery-1.jpg"></div>
-				<div class="ui-block-b"><img src="img/gallery-2.jpg"></div>
-				<div class="ui-block-c"><img src="img/gallery-3.jpg"></div>
-				<div class="ui-block-a"><img src="img/gallery-4.jpg"></div>
-				<div class="ui-block-b"><img src="img/gallery-5.jpg"></div>
-				<div class="ui-block-c"><img src="img/gallery-6.jpg"></div>
-				<div class="ui-block-a"><img src="img/gallery-7.jpg"></div>
-				<div class="ui-block-b"><img src="img/gallery-8.jpg"></div>
-				<div class="ui-block-c"><img src="img/gallery-9.jpg"></div>
+			<div class="ui-grid-b">		
+				<div class="ui-block-a">
+					<a href="#1" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-1.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+
+				<div class="ui-block-b">
+					<a href="#2" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-2.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+
+				<div class="ui-block-c">
+					<a href="#3" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-3.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<div class="ui-block-a">
+					<a href="#4" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-4.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<<div class="ui-block-b">
+					<a href="#5" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-5.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<div class="ui-block-b">
+					<a href="#6" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-6.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<div class="ui-block-a">
+					<a href="#7" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-7.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<div class="ui-block-b">
+					<a href="#8" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-8.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
+				<div class="ui-block-c">
+					<a href="#9" data-rel="popup" data-position-to="window" data-transition="fade"><img class="popphoto" src="img/gallery-9.jpg" alt="Cordoba, Veracruz" style="witdh:30%"></a>		
+				</div>
 			</div>
 		</div>
 	</div>
 
+	<div id="privacidad" data-role="page">
+		<div data-role="header" class="padding-4tb">
+			<div data-role="control-group" data-type="horizontal" class="ui-btn-left">
+				<a data-rel="back" data-icon="arrow-l" data-role="button" class="menu-btn"></a>
+			</div>
+			<h1>Aviso de Privacidad</h1>
+		</div>
+		<div data-role="main" class="ui-content">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+		</div>
+	</div>
+
+
 	<script type="text/javascript" src="js/phonegap.js"></script>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+
 </body>
 </html>
