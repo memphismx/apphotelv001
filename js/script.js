@@ -24,7 +24,7 @@ var hotel = {
 				window.location.href = "#main";
 
 			} else{
-				throw new Error("no existe tu cuenta intentalo de nuevo")
+				throw new Error("no existe tu cuenta intentalo de nuevo");
 			}
 
 		}catch(error){
@@ -35,7 +35,7 @@ var hotel = {
 } ;
 
 // Metodo para Compilar
-//hotel.principal();
+hotel.principal();
 
 //Metodo para desarrollar
-hotel.inicio()
+//hotel.inicio()
