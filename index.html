@@ -32,13 +32,14 @@
 		
 		<div data-role="main" class="ui-content"> 
 			<h1> Registro </h1>
-			<input type="text" name="name" id="Nombre" placeholder="Nombre">
-			<input type="Tel" name="phone" id="Telefono" placeholder="Telefono"> 
+			<input type="text" name="name" id="nombre-registro" placeholder="Nombre">
+			<input type="Tel" name="phone" id="telefono-registro" placeholder="Telefono"> 
 			<input type="text" name="email" id="email-registro" placeholder="Correo" >
-			<input type="password" name="password" id="password" placeholder="Contraseña">
-			<input type="password" name="password" id="password2" placeholder="Confirmar contraseña">
+			<input type="password" name="password" id="password-registro" placeholder="Contraseña">
+			<input type="password" name="password" id="password2-registro" placeholder="Confirmar contraseña">
 
-			<button class ="ui-btn ui-btn-active">Registrar</button>
+			<button id="btn-registrar" class ="ui-btn ui-btn-active">
+					Registrar</button>
 			<a href="#inicio"> Ya tienes cuenta? </a>
 		</div>
 			<div data-Role="footer" data-position="fixed">
@@ -62,8 +63,9 @@
 		<div data-role="panel" id="menu" data-display="reveal">
 			<h3>Menú</h3>
 			<ul data-role="listview">
-				<li>Inicio</li>
-
+				<li>
+					<a href="#inicio">Inicio</a>
+				</li>	
 				<li >
 					<a href="#reservar">Reservar</a>
 				</li>
@@ -75,6 +77,9 @@
 				</li>
 				<li>
 					<a href="#privacidad">Aviso de Privacidad</a>
+				</li>
+				<li>
+					<a href="#btn-cerrar-sesion">Cerrar Sesión/a>
 				</li>
 			</ul>
 		</div>
@@ -290,6 +295,25 @@
 	<script type="text/javascript" src="js/phonegap.js"></script>
 	<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
 	<script type="text/javascript" src="js/jquery.mobile-1.4.5.min.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+	<script>
+  // Initialize Firebase
+  	var config = {
+    	apiKey: "AIzaSyCGH1WXY0y2bfwPEoc19YMQdRvlnL9swHQ",
+    	authDomain: "hotelapv001.firebaseapp.com",
+    	databaseURL: "https://hotelapv001.firebaseio.com",
+    	projectId: "hotelapv001",
+    	storageBucket: "hotelapv001.appspot.com",
+    	messagingSenderId: "862774811314"
+  	};
+  		firebase.initializeApp(config);
+	</script>
+
+
+
 	<script type="text/javascript" src="js/script.js"></script>
 
 </body>
