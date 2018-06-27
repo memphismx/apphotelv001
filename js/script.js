@@ -80,7 +80,7 @@ var hotel = {
 
 			}
 			
-			if(email== "rrodriguez@atm.com.mx" && password == "123"){
+			if(email== "Rigo" && password == "123"){
 				window.location.href = "#main";
 
 			} else{
