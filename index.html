@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <!DOCTYPE html>
 <html>
 <head>
@@ -55,7 +55,8 @@
 		</div>
 		<div data-role="main" class="ui-content">
 			<img src="img/logo-hotel2.jpg" >
-			<p>Bienvenido Juan</p>
+			<p>Bienvenido <spam id="main-username"> </spam>
+			</p>
 			<a href="#reservar" class="ui-btn ui-btn-active">
 				Reserva ya!
 			</a>	
@@ -95,13 +96,13 @@
 		</div>
 			<div class="ui-field-contain">
 				<label for="Selec-native-1">Nombre:</label>
-				<input type="text" name="nombre" id="Nombre" placeholder="Nombre">
+				<input type="text" name="nombre" id="reservar-nombre" placeholder="Nombre">
 			</div>	
 
 			<form>
 				<div class="ui-field-contain">
 					<label for="Selec-native-3">Tipo Habitación:</label>
-					<select name="Selec-native-3" id="Selec-native-3" data-iconpos="left">
+					<select name="Selec-native-3" id="reservar-tipo" data-iconpos="left">
 						<option Value="1">Sencilla</option>
 						<option Value="2">Doble</option>
 						<option Value="3">Suite</option>
@@ -112,7 +113,7 @@
 			<form>
 				<div class="ui-field-contain">
 					<label for="Selec-native-3">Personas:</label>
-					<select name="Selec-native-3" id="Selec-native-3" data-iconpos="left">
+					<select name="Selec-native-3" id="reservar-personas" data-iconpos="left">
 						<option Value="1">Una</option>
 						<option Value="2">Dos</option>
 						<option Value="3">Tres o más</option>
@@ -121,21 +122,21 @@
 			</form>
 			<div class="ui-field-contain">
 				<label for="Selec-native-1">Fecha Ingreso:</label>
-				<input type="date" name="FechaE" id="FechaE" placeholder="Fecha Entrada">
+				<input type="date" name="FechaE" id="reservar-fechaE" placeholder="Fecha Entrada">
 			</div>	
 
 			<div class="ui-field-contain">
 				<label for="Selec-native-1">Fecha Salida:</label>
-				<input type="date" name="FechaS" id="FechaS" placeholder="Fecha Salida">
+				<input type="date" name="FechaS" id="reservar-fechaS" placeholder="Fecha Salida">
 			</div>
 
 
 
 			<label>
-		        <input type="checkbox" name="checkbox-0 ">Aceptar Términos
+		        <input type="checkbox" name="checkbox-0 " id="reservar-check">Aceptar Términos
 		    </label>
 
-		    <button class="ui-btn ui-btn-active">
+		    <button id="btn-reservar" class="ui-btn ui-btn-active">
 		    	Reservar
 		    </button>
 		</div>	   
@@ -277,9 +278,9 @@
 		<div data-role="main" class="ui-content">
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			quis nostrud ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure rigo in reprenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepr sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

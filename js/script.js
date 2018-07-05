@@ -7,6 +7,58 @@ var hotel = {
 		 $("#btn-inicio-sesion").click(hotel.iniciarSesion);
 		 $("#btn-registrar").click(hotel.registro);
 		 $("#btn-cerrar-sesion").click(hotel.cerrarSesion);
+		 $("#btn-reservar").click(hotel.reservar);
+
+	},
+
+	historial:function(){
+		var historial = firebase.database();
+		var starCountRef = firebase.database().ref('posts/' + postId + '/starCount');
+		starCountRef.on('value', function(snapshot) {
+  			updateStarCount(postElement, snapshot.val());
+});
+  		alert(username)
+  // ...
+});
+
+
+	reservar:function(){
+		var nombre = $("#reservar-nombre").val();
+		var tipo = $("#reservar-tipo").val();
+		var personas = $("#reservar-personas").val();
+		var fechaE = $("#reservar-fechaE").val();
+		var fechaS = $("#reservar-fechaS").val();
+		
+		try{
+			if(nombre==""){
+				throw new Error("nombre está vacio");
+			}
+			if(fechaE==""){
+				throw new Error("No hay fecha de entrada");
+			}
+			if(fechaS==""){
+				throw new Error("No hay fecha de salida");
+			}
+
+		/*	if(!$("#reservar-check").prop("cheked")){
+				throw new Error("tienes que aceptar los terminos");
+			}
+
+*/
+			var reservacion = {
+				name : nombre,
+				type : tipo,
+				persons : personas,
+				datein : fechaE,
+				dateout : fechaS
+			};
+			var database = firebase.database();
+			var userId = firebase.auth().currentUser.uid;
+			database.ref("reservations/"+userId).push(reservacion);
+
+		}catch(error){
+			alert(error);	
+		}	
 	},
 
 	cerrarSesion:function(){
@@ -80,16 +132,21 @@ var hotel = {
 
 			}
 			
-			if(email== "Rigo" && password == "123"){
-				window.location.href = "#main";
-
-			} else{
-				throw new Error("no existe tu cuenta intentalo de nuevo");
-			}
+		firebase.auth()
+			.signInWithEmailAndPassword(email, password)
+			.then(function(){
+				var user=firebase.auth().currentUser;
+				$("#main-username").html(user.displayName);
+				window.location.href="#main";
+			})
+			.catch(function(error) {
+  	// Handle Erroalertrs here.
+  				alert(error);
+ 		  // ...
+		});
 
 		}catch(error){
 			alert(error);
-
 		}
 	}
 } ;
